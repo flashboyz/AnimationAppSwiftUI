@@ -11,7 +11,7 @@ import SwiftUI
 struct AnimationAppSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabViews()
         }
     }
 }
