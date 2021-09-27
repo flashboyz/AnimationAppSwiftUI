@@ -29,7 +29,7 @@ struct FotoIcon: View {
             .frame(width: width / 5, height: height / 2.5)
             .shadow(color: .black, radius: 3, x: 0, y: 0)
             .blur(radius: 0.1)
-            .shadow(color: .gray, radius: 4, x: 0, y: 0)
+            .shadow(color: Color("Color1"), radius: 4, x: 0, y: 0)
             Spacer()
         }
         .padding(.top, height / 2.5)

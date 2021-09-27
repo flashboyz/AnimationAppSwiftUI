@@ -35,9 +35,10 @@ struct MainView: View {
                 .animation(.easeInOut(duration: animationsDurations), value: showAward)
             FotoIcon(width: 250, height: 250)
                 .opacity(showAward ? 1 : 0)
-                .rotationEffect(Angle.degrees(showAward ? 0 : 360))
-                .rotation3DEffect(.degrees(Double(-45)), axis: (x: -1, y: 1, z: 0))
-                .animation(.interpolatingSpring(mass: 2, stiffness: 10, damping: 150, initialVelocity: 0), value: showAward)
+                .scaleEffect(showAward ? 1 : 0)
+                .rotationEffect(Angle.degrees(showAward ? 270 : 980))
+                .rotation3DEffect( showAward ? .degrees(25) : .degrees(90), axis: (x: 1, y: 0, z: 0))
+                .animation(.interpolatingSpring(mass: 1.7, stiffness: 10, damping: 20, initialVelocity: 0), value: showAward)
             Spacer()
         }
         .font(.headline)
